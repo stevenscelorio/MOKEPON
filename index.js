@@ -1,7 +1,6 @@
 const express = require('express')
 const cors = require('cors')
 
-'http://jarvis-Vivobook-Go-E1504FA-E1504FA.local:1942'
 
 const app = express()
 
