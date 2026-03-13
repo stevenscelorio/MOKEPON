@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+}
+
+/*
+usamos la misma etiqueta que en html para cambiar el estilo
+cuando usamos una clase en html; en css usamos un punto(.) y seguido el nombre de la clase
+cuando usamos un id en html usamos un # en css seguido del nombre del id
+*/
+
+.titulo {
+    color: rgb(0, 252, 34);
+    font-size: 80px;
+}
+
+.subtitulo {
+    color: rgb(0, 252, 34);
+    font-size: 56px;
+}
+
+/*
+display y sus tipos
+cada etiqueta es una es como una cajita con su ancho y altura
+bloque: ocupa todo el espacio a lo ancho
+inline: no le podemos agregar propiedades como altura o alchura
+inline block: deja poner propiedades
+*/
+
+#seleccionarMascotas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+margin,border,pading, content
+content es la cajita donde esta el contenido
+el pading contiene la cajita de content y si lo modificamos se modifica la cajita
+border es el borde del pading
+margin, es donde esta todo el contenido 
+*/
+
+.tarjetasMokepones {
+    width: 310px;
+    height: 200px;
+    background-color: rgb(0 252 34);
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 18px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tarjetasMokepones p {
+    writing-mode: vertical-rl;
+    flex-grow: 1;
+    font-size: 14px;
+    text-orientation: upright;
+    
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #0071d4;
+}
+
+#botonSeleccionar {
+    width: 220px;
+    height: 55px;
+    background-color: rgb(0 252 34);
+    padding: 5px;
+    border-radius: 50px;
+    margin: 15px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:x-large;
+    
+}
+
+.tarjetas {
+    display: flex;
+}
+
+.tarjetasMokepones img {
+    width: 190px;
+}
+
+/*
+Empezamos a darle estilo a la segudan pagina 
+*/
+
+#Ataques {
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+
+.botones {
+    background-color: rgb(0, 252, 34);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 70px;
+    font-size: -webkit-xxx-large;
+    margin: 30px;
+
+}
+
+.boton-de-ataque {
+  background-color: rgb(0, 252, 34);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: transparent;
+  width: 80px;
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  font-size: x-large;
+  margin: 11px;
+}
+
+#mensajes {
+    color: #0071d4;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reiniciar {
+    border: none;
+    color: #0071d4;
+    font-family: "Permanent Marker", cursive;
+    width: 120px;
+    font-size: x-large;
+    background-color: transparent;
+
+}
+
+.atack {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    justify-items: center;
+}
+
+.jugador1, .jugador2 {
+    justify-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+#ver-mapa button {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(0, 252, 34);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 70px;
+    font-size: 15px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa {
+    max-width: 100%;
+    display: block;
+}
+
+@media (max-width: 500px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .golpes {
+        flex-direction: column;
+    }
+}
+
+

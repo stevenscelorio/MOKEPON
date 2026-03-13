@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MOKEPON!!! 🔥🌊🪴</title>
+        <script src="MOKEPON.JS" defer></script>
+        <link rel="stylesheet" href="./MOKEPON_STYLE.CSS">
+    </head>
+    <body>
+
+        <section id="seleccionarMascotas">
+            <h1 class="titulo">Mokepon</h1>
+
+            <h2 class="subtitulo">Elige tu Mascota</h2>
+
+            <div id="contenedorTarjeta" class="tarjetas">
+            </div>
+
+
+            <button id="botonSeleccionar">seleccionar</button>
+        </section>
+        
+        <section id="ver-mapa">
+            <h2 class="subtitulo">Recorre el mapa con tu mokepon</h2>
+            <canvas id="mapa"></canvas>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+            <div>
+                <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+                <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+                <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+            </div>
+        </section>
+
+        <section id="Ataques">
+            <h1 class="titulo">Mokepon</h1>
+            <h2 class="subtitulo">Elige tu ataque</h2>
+
+            <div id="contenedorAtaques" class="golpes">
+                
+            </div>
+
+            <div id="mensajes">
+                <p id="resultados">SUERTE</p>
+
+                <section id="reiniciarJuego">
+                    <button id="reiniciar">Reiniciar</button>
+                </section>
+            </div>
+
+            <div class="atack">
+                <div class="jugador1">
+                    <p id="vidas-Jugador">0</p>
+                    <p id="nombreMascotaJugador"> </p>
+                    <div id="ataquesDelJugador"></div>
+                </div>
+                <div class="jugador2">
+                    <p id="vidas-Enemigo">0</p>
+                    <p id="nombreMascotaEnemigo"> </p>
+                    <div id="ataquesDelEnemigo"></div>
+                </div>
+                
+                
+                
+            </div>
+            
+
+        </section>
+
+    </body>
+</html> 
